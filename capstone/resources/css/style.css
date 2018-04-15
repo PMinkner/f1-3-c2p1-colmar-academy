@@ -1,0 +1,592 @@
+
+html{
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+}
+
+body{
+  width: 100%;
+}
+
+h1{
+  margin: 0;
+  padding: 0;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 2.5rem;
+  opacity: 0.8;
+}
+/*####################  NAVBAR ########################*/
+
+.navbar{
+  width: 100%;
+  height: 4rem;
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  top: 0;
+  background-color: white;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.logo img{
+  margin-left: 1.5rem;
+  height: 2.5rem;
+}
+
+.logo span{
+  font-size: 2rem;
+  color: lightgrey;
+}
+
+ .logo span:nth-child(2){
+    color: midnightblue;
+    font-weight: bolder;
+}
+
+nav ul{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style: none;
+  margin-right: 1.5rem;
+}
+
+ul li a{
+  text-decoration: none;
+  margin-right: 0.5rem;
+  padding: 1rem;
+  color: lightgrey;
+}
+
+.mobile-nav{
+  display: none;
+}
+
+ul li a:hover{
+  color: lightblue;
+  transition: 0.7s;
+}
+
+@media only screen and (max-width: 470px){
+  .desktop-nav{
+    display: none;
+  }
+
+  .mobile-nav{
+    display: flex;
+    flex-direction: row;
+
+  }
+
+  .mobile-nav li{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+  }
+
+.mobile-nav img{
+  height: 2.5rem;
+}
+
+  .logo span{
+    display: none;
+}
+
+}
+
+/*####################  BANNER ########################*/
+
+.banner{
+  width: 100%;
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.banner img{
+  width: 60%;
+  height: auto;
+  margin: 2rem 1.5rem;
+}
+
+.headline{
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  color: grey;
+  margin-left: 1.5rem;
+}
+
+.headline h1{
+  font-size: 3rem;
+  padding: 0;
+  margin: 0;
+  color: #2A2405;
+  text-align: left;
+}
+
+.headline p{
+  font-size: 2rem;
+  color: #2A2405;
+}
+
+.button{
+  background-color:  #2A2405;
+  width: 80%;
+  text-align: center;
+  padding: 1rem 1rem;
+  margin: 1.5rem 0;
+}
+
+.button a{
+  width: auto;
+  color: white;
+  padding: 2rem 2rem;
+  text-decoration: none;
+  font-size: 1.5rem;
+
+}
+
+.button a:hover{
+  color: lightblue;
+  transition: color 0.7s ease 0.1s;
+}
+
+@media only screen and (max-width:470px){
+
+  .banner{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .banner img{
+    width: 100%;
+  }
+
+  .headline{
+    max-width: 100%;
+    padding: 2rem;
+  }
+
+  .headline h1{
+    font-size: 2rem;
+    margin-left: 1rem;
+  }
+
+  .headline p{
+    font-size: 1.5rem;
+    max-width: 95%;
+    margin-left: 1rem;
+  }
+
+  .button {
+    margin-left: 1rem;
+  }
+
+}
+
+/*####################  NEWS ########################*/
+
+.news{
+  width:100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.main-article{
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.main-article img{
+  width: 100%;
+  height: auto;
+  margin: 2rem 1.5rem;
+}
+
+.main-article h2{
+  margin: 0;
+  padding: 0;
+  color: #2A2405;
+  margin-bottom: 1.5rem;
+  margin-left: 1.5rem;
+  font-size: 3rem;
+
+}
+
+.main-article p{
+  color: #2A2405;
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+  margin-left: 1.5rem;
+  font-weight: lighter;
+}
+
+.article{
+  width: 40%;
+  margin-left: 2rem;
+  border-left: 1px solid #EAEAE3;
+}
+
+.box{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 1rem;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  border: 1px solid lightgrey;
+}
+
+.box img{
+  width: 35%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+
+.mobile-img{
+  display: none;
+}
+
+.content{
+  padding-left: 1.5rem;
+}
+
+.content h3{
+  font-size: 2rem;
+  letter-spacing: 1px;
+  opacity: 0.7;
+  margin: 0;
+  padding: 0;
+}
+
+.content p{
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  opacity: 0.7;
+}
+
+.content a{
+  text-decoration: none;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  color: lightblue;
+  font-weight: 500;
+
+}
+
+  .content a:hover{
+    color: midnightblue;
+    transition: 0.7s ease;
+  }
+
+
+.article .box:last-child {
+  background-color: lightgrey;
+}
+
+.article .box:first-child {
+  padding-top: 2rem;
+  border-top: 0;
+}
+
+@media only screen and (max-width: 470px){
+
+  .main-article{
+    display: none;
+  }
+
+  .news{
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+
+  }
+
+
+  .article{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 0px;
+    padding: 0;
+    margin: 0;
+  }
+
+  .box{
+    width: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    border: 0px;
+  }
+
+  .box img{
+    display: none;
+  }
+
+  .mobile-img{
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+
+  .box .mobile-img{
+    display: block;
+    width: 86%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1rem;
+    margin: 1rem;
+  }
+
+  .content{
+    padding-left: 1.5rem;
+  }
+
+  .box a,
+  .box p{
+    font-size: 1rem;
+
+  }
+
+  .article .box:last-child {
+    background-color: white;
+  }
+
+}
+
+
+/*####################  LEARNING - SECTION ########################*/
+
+.learning-section{
+  width: 100%;
+  background-color: lightgrey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.course-section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 4.5rem 2rem 4.5rem;
+}
+
+.course{
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  margin: 20px;
+  background-color: white;
+}
+
+.course img{
+  width: 100%;
+  height: auto;
+}
+
+.course p{
+  padding: 0.5rem 1rem;
+  font-size: 1.4rem;
+  opacity: 0.7;
+}
+
+
+.course h3{
+  padding: 0;
+  margin: 0;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.7rem;
+}
+
+.course h4{
+  padding: 0;
+  margin: 0;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  font-weight: lighter;
+  font-size: 1.5rem;
+  opacity: 0.7;
+}
+
+.course:hover{
+  background: lightblue;
+  transition: 1s ease-in-out;
+}
+
+@media only screen and (max-width: 470px){
+
+  .learning-section{
+    width: 100%;
+    background-color: white;
+  }
+
+  .course-section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .course{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    padding: 1rem;
+    margin: 0.5rem;
+    background-color: lightgrey;
+  }
+
+  .course h3{
+    padding: 1rem;
+    margin: 0;
+    opacity: 0.5;
+  }
+
+  .course img{
+    display: none;
+  }
+
+  .course h4{
+     display: none;
+   }
+
+   .course h4,
+   .course p{
+      display: none;
+    }
+}
+
+/*####################  THESIS ########################*/
+
+.video{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.video video{
+  max-width: 100%;
+}
+
+.video h3{
+  margin: 0;
+  padding: 1.5rem 0 0.5rem 1.5rem;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  opacity: 0.7;
+  margin: 0;
+}
+
+.video p{
+  padding-left: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+
+
+.thesis{
+  width: 40%;
+  margin-left: 1.5rem;
+}
+.thesis .box{
+  border: 0px;
+}
+
+.thesis .box:first-child{
+  background: lightgrey;
+}
+
+@media only screen and (max-width:470px){
+
+  .news{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .thesis{
+    display: none;
+  }
+
+  .video{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .video video{
+    height: auto;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 1.5rem;
+  }
+
+  .video h3,
+  .video  p{
+    display: none;
+  }
+
+}
+
+/*####################  FOOTER ########################*/
+
+footer{
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+footer p{
+  flex-grow: 1;
+}
+
+footer ul li{
+  display: inline;
+  list-style: none;
+  color:
+}
+
+
+@media only screen and (max-width: 470px){
+
+  footer p{
+    text-align: left;
+    display: block;
+    margin: 1rem 1rem;
+
+  }
+
+  footer ul{
+    display: none;
+  }
+
+}
